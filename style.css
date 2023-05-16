@@ -42,7 +42,7 @@ header .menu ul li a{
 }
 #home .container .content{
     width: 80%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
