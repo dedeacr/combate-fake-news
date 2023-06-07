@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combate às Fake News</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/42b820d576.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42b820d576.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header>
@@ -17,6 +17,17 @@
                 <li><a href="#howitworks">Como funcionam</a></li>
                 <LI><a href="#howtocombat">Como combater</a></LI>
             </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#definition">O que são</a></li>
+                <li><a href="#origin">Como surgiram</a></li>
+                <li><a href="#howitworks">Como funcionam</a></li>
+                <li><a href="#howtocombat">Como combater</a></li>
+            </ul>
+        </div>
+        <div class="menu_btn">
+            <img src="image/btn4.png" alt="">
         </div>
     </header>
     <main id="home">
@@ -168,19 +179,32 @@
                 <p>revisão</p>
                 <h1>Vamos testar nossos conhecimentos?</h1>
                 <div class="content">
-                    <span>
-                        Agora que já aprendemos o que são Fake News e como podemos nos proteger,
-                        vamos responder algumas questões para confirmar o que vimos nas aulas!
-                        Logo abaixo você encontra um Formulário com algumas perguntas sobre o que estudamos,
-                        conto com sua participação!
-                        
-                    </span> 
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-5xf3pUZ6mqXQa3XL-17312q8bkNUgymycGk33g1oHx1aOw/viewform?embedded=true" width="640" height="240" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>        </div>
+                    <div class="left">
+                        <span>
+                            Agora que já aprendemos o que são Fake News e como podemos nos proteger,
+                            vamos responder algumas questões para confirmar o que vimos nas aulas!
+                            Logo abaixo você encontra um Formulário com algumas perguntas sobre o que estudamos,
+                            conto com sua participação!
+                        </span>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-5xf3pUZ6mqXQa3XL-17312q8bkNUgymycGk33g1oHx1aOw/viewform?embedded=true" width="520" height="240" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>        
+                    </div>
+                </div>
+        </div>
     </section>
     <footer>
         <span>
             Copyright 2023 - Todos os direitos reservados
         </span>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".menu_btn").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
 </body>
 </html>
