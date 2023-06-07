@@ -600,33 +600,34 @@ footer a{
     header .menu_btn{
         display: block;
     }
-    #home .container{
-        background-size: cover;
+    #home .container {
+        width: 90vh;
     }
-    #home .container content{
-        width: 50%;
-
+    #home .container .content{
+        width: 80%;
+        margin-left: 50px;
     }
     #home .container .content h1{
         font-size: 3rem;
     }
     #home .container .content p{
         width: 80%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 30px;
     }
         /* O que são */
-
+    #definition .container {
+        width: 90vh;
+    }
     #definition .container h1{
         margin-top: 10px;
         font-size: 2rem;
     }
     #definition .container .img{
-        margin-top: 20px;
-        transform: scale(0.7);
+        display: none;
     }
     #definition .container .call{
-        width: 90%;
+        width: 80%;
     }
     #definition .container .call .left, 
     #definition .container .call .right {
@@ -635,10 +636,10 @@ footer a{
     }
     /*Como surgiram*/
     #origin .container {
-        background-size: cover;
+        width: 90vh;
     }
     #origin .container .left{
-        width: 90%;
+        width: 80%;
         margin-left: 40px;
     }
     #origin .container .left h1{
@@ -647,13 +648,14 @@ footer a{
     }
     #origin .container .left span{
         font-size: 0.8rem;
+        flex-direction: column;
     }
     /*Como funcionam*/
     #howitworks .container {
-        background-size: cover;
+        width: 90vh;
     }
     #howitworks .container .content{
-        width: 90%;
+        width: 80%;
     }
     #howitworks .container h1{
         margin-top: 10px;
@@ -664,12 +666,12 @@ footer a{
     }
     /*Como evitar cair nas fake news*/
     #howtocombat .container{
-        background-size: cover;
+        width: 90vh;
         flex-direction: column;
     }
     #howtocombat .container .left{
         width: 80%;
-        margin-top: 200px;
+        margin-top: 150px;
     }
     #howtocombat .container .left h2{
         font-size: 1rem;
@@ -687,32 +689,41 @@ footer a{
         text-align: center;
     }
     #howtocombat .container .right{
-        width: 90%;
+        width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
         padding: 80px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
     }
     #howtocombat .container .right .box{
         width: 100%;
     }
     #howtocombat .container .right .box .data span{
+        /*ícones*/
         font-size: 1.5rem;
     }
     #howtocombat .container .right .box .info p{
+        /*texto informativo*/
         display: none;
     }
+    #howtocombat .container .right .box .info span{
+        font-size: 1rem;
+    }
+
     #question .container{
-        align-items: center;
-        background-size: cover;
-        flex-direction: column;
+        width: 90vh;
+        text-align: center;
         margin-top: 70px;
     }
     #question .container .content .left{
-        width: 80vh;
+        width: 80%;
         font-size: 0.8rem;
     }
     #question .container .content .right{
-        width: 80vh;
+        align-items: center;
+    }
+    footer{
+        width: 90vh;
     }
 }
