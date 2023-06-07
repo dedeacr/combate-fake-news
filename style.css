@@ -535,15 +535,30 @@ footer a{
         background-size: cover;
     }
     #origin .container .left{
-        width: 60%;
+        width: 80%;
+        margin-left: 50px;
     }
+    #origin .container .left h1{
+        font-size: 2rem;
+    }
+    #origin .container .left span{
+        font-size: 0.9rem;
+    }
+
     /*Como funcionam*/
     #howitworks .container {
         background-size: cover;
     }
-    #howitworks .container .content{
-        width: 80%;
+    #howitworks .container h1{
+        font-size: 2rem;
     }
+    #howitworks .container .content{
+        width: 90%;
+    }
+    #howitworks .container .content span{
+        font-size: 0.8rem;
+    }
+
     /*Como evitar cair nas fake news*/
     #howtocombat .container{
         background-size: cover;
@@ -551,7 +566,7 @@ footer a{
     }
     #howtocombat .container .left{
         width: 80vh;
-        height: 40vh;
+        height: 20vh;
     }
     #howtocombat .container .left h2{
         margin:0 auto;
@@ -561,16 +576,26 @@ footer a{
     }
     #howtocombat .container .left h1{
         text-align: center;
+        font-size: 2rem;
     }
     #howtocombat .container .left span{
+        display: none;
+/*        margin-top: 20px;
         font-size: 1rem;
-        text-align: justify;
+        text-align: justify;*/
     }
     #howtocombat .container .right{
-        width: 90%;
+       /* width: 90%;
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 10px;*/
+
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 10px;
     }
     #howtocombat .container .right .box .data span{
         font-size: 1.5rem;
@@ -587,6 +612,7 @@ footer a{
     }
     #question .container .content .left{
         width: 80vh;
+        font-size: 1rem;
     }
     #question .container .content .right{
         width: 80vh;
